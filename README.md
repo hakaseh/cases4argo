@@ -32,6 +32,13 @@ vi ~/.zshrc
 Add `export PATH=$PATH:/$HOME/.local/bin`
 Either open a new tab in Terminal or do `source $HOME/.zshrc` to reflect this change.
 
+## Set up the environment
+Install additional libraries necessary for analyses.
+```
+cd $HOME/gotm-fabm-eat-memg-argo
+conda env update --name eat --file environment_extra.yml
+```
+
 ## Test cases
 
 Test cases refer to configurations to run the model at specific locations. Here, each case represents a fixed point where a BGC-Argo float was drifting. We created test cases following an example from the official EAT repository (https://github.com/BoldingBruggeman/eat/tree/main/tests/nns_annual), by copying and pasting the directory and modifying the contents.
@@ -51,6 +58,8 @@ cp $HOME/memg/example/fabm.yaml .
 ### Ensemble
 For ensemble with identical physics but differing BGC parameters, we still need to create matching gotm_00##.yaml for each fabm_00##.yaml.
 Refer to “create_parameter_ensemble.py”
+
+
 
 # References
 - GOTM: https://github.com/gotm-model/code 
