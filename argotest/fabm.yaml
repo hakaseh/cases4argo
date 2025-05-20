@@ -1,0 +1,128 @@
+instances:
+  light:
+    model: memg/bio_fennel/light
+    parameters:
+    initialization:
+    use: true
+
+  1p1z:
+    model: memg/bio_fennel/1p1z
+    parameters:        
+      I_thNH4: 0.0095      
+      D_p5NH4: 0.1          
+      NitriR: 0.05          
+      K_NO3: 2.0         
+      K_NH4: 2.0           
+      Vp0: 0.69           
+      K_Phy: 0.5   
+      PhyCN: 6.625         
+      PhyIS: 0.025          
+      PhyMR: 0.072            
+      Chl2C_m: 0.0535        
+      ZooAE_N: 0.75          
+      ZooBM: 0.1            
+      ZooER: 0.1           
+      ZooGR: 0.75         
+      ZooMR: 0.025
+      ZooCN: 6.625
+      LDeRRN: 0.01        
+      SDeRRN: 0.03         
+      CoagR: 0.005           
+      wP: 0.0               
+      wL: 0.0              
+      wS: 0.0              
+      PhyMin: 0.000001           
+      ChlMin: 0.000001            
+      ZooMin: 0.000001
+      oxy_model: false
+
+    initialization:
+      no3: 10.0      
+      nh4: 0.1    
+      phy: 0.1   
+      chl: 0.1  
+      zoo: 0.1  
+      SDeN: 0.1
+      LDeN: 0.1
+    use: true
+
+  2p2z:
+    model: memg/bio_fennel/2p2z
+    parameters:
+      I_thNH4: 0.0095    
+      D_p5NH4: 0.1      
+      NitriR: 0.2      
+      Ps_K_NO3: 2.0   
+      Pl_K_NO3: 0.5         
+      Ps_K_NH4: 2.0         
+      Pl_K_NH4: 0.5        
+      Ps_Vp0: 0.69         
+      Pl_Vp0: 4.0          
+      K_ZsPs: 1.2          
+      K_ZlPs: 1.2          
+      K_ZsPl: 0.5         
+      K_ZlPl: 0.5           
+      K_ZlZs: 1.2                 
+      K_ZlDs: 0.5            
+      PhyCN: 6.625            
+      Ps_PhyIS: 0.065       
+      Pl_PhyIS: 0.04             
+      PhySMR: 0.06         
+      PhyLMR: 0.15          
+      Ps_Chl2C_m: 0.04      
+      Pl_Chl2C_m: 0.04         
+      ZooSAE_N: 0.75        
+      ZooLAE_N: 0.75          
+      ZooSBM: 0.1      
+      ZooLBM: 0.2           
+      ZooSER: 0.1           
+      ZooLER: 0.2      
+      ZooSPsGR: 7.0        
+      ZooSPlGR: 3.8242        
+      ZooLPsGR: 2.8242          
+      ZooLPlGR: 2.0     
+      ZooLZsGR: 4.0             
+      ZooLDsGR: 7.0         
+      ZooL_GrInPs: 3.010    
+      ZooS_GrInPl: 3.010     
+      ZooL_GrInDs: 3.010      
+      ZooSMR: 0.05        
+      ZooLMR: 0.08         
+      ZooCN: 6.625          
+      LDeRRN: 0.1875
+      FragRN: 0.0
+      SDeRRN: 0.06          
+      CoagR: 0.1
+      DiatSiN: 1.0
+      OpalPR: 0.0 
+      OpalDR: 0.0225
+      fcaco3_0: 0.10
+      fcaco3_90: 0.02
+      CalcPR: 0.0
+      CalcDR: 0.0 
+      PhyMin: 0.00000001           
+      ChlMin: 0.00000001          
+      ZooMin: 0.00000001
+      Kz: 0
+      oxy_model: false
+      TEMP_RATES: true
+    initialization:
+    use: false
+    
+  2p2z_sink:
+    model: memg/bio_fennel/2p2z_sink
+    parameters:
+      wPS: 0.1
+      wPL: 0.1
+      wS: 2.0
+      wL_min: 72.5
+      wL_max: 250.0
+    initialization:
+    use: false
+    
+    
+  oxygen:
+    model: memg/bio_fennel/oxygen
+    parameters:
+    initialization:
+    use: false

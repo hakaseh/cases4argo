@@ -1,0 +1,8 @@
+# Additional libraries to be installed.
+
+name: eat  # same as existing env
+channels:
+  - conda-forge
+dependencies:
+  - scikit-learn
+
