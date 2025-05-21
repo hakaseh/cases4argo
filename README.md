@@ -27,7 +27,7 @@ conda activate eat
 source ./install -DFABM_INSTITUTES=memg -DFABM_MEMG_BASE=../memg
 ```
 
-An error may occur in the last step because `eat` requires an older version of `cmake` (it occurred to me after I re-installed `conda` on May 21, 2025). To resolve this issue, downgrade `cmake` and then re-install `eat`:
+An error may occur in the last step because `eat` requires an older version of `cmake` (it occurred to me after I re-installed `conda` (miniconda) on May 21, 2025). To resolve this issue, downgrade `cmake` and then re-install `eat`:
 
 ```
 conda install cmake=3.24
