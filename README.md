@@ -26,10 +26,20 @@ conda env create -f environment.yml
 conda activate eat
 source ./install -DFABM_INSTITUTES=memg -DFABM_MEMG_BASE=../memg
 ```
+
+An error may occur in the last step because `eat` requires an older version of `cmake` (it occurred to me after I re-installed `conda` (miniconda) on May 21, 2025). To resolve this issue, downgrade `cmake` and then re-install `eat`:
+
+```
+conda install cmake=3.24
+source ./install -DFABM_INSTITUTES=memg -DFABM_MEMG_BASE=../memg
+```
+
 The above line will create executables in `$HOME/.local/bin/` (not sure why inside a hidden directory). To use them, this directory needs to be exported.
 
 vi ~/.zshrc
+
 Add `export PATH=$PATH:/$HOME/.local/bin`
+
 Either open a new tab in Terminal or do `source $HOME/.zshrc` to reflect this change.
 
 ## Set up the environment
