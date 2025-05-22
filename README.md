@@ -69,6 +69,11 @@ cp $HOME/memg/example/fabm.yaml .
 For ensemble with identical physics but differing BGC parameters, we still need to create matching gotm_00##.yaml for each fabm_00##.yaml.
 Refer to “create_parameter_ensemble.py”
 
+To submit 1000 ensembles using 8 cores (available on my Macbook Pro), do the following:
+```
+seq -w 0001 1000 | parallel -j 8 'eat-gotm gotm_{}.yaml --output_id _{}'
+```
+
 
 
 # References
