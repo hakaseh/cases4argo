@@ -4,7 +4,7 @@ from scipy.stats import qmc
 from define_parameter_range import parameter_range,parameter_path
 
 # Start of user input
-N = 10    # ensemble size
+N = 300    # ensemble size
 # End of user input
 
 name_para = [row[0] for row in parameter_range]
@@ -30,3 +30,5 @@ with eatpy.models.gotm.YAMLEnsemble("gotm.yaml", N) as gotm, eatpy.models.gotm.Y
     #fabm["instances/1p1z/parameters/K_Phy"] *= np.random.lognormal(sigma=0.2, size=N)
     for i in range(len(name_para)):
         fabm[parameter_path+name_para[i]] = sample_rounded[:,i]
+# Save the paramter values
+np.savetxt("parameter-values-"+str(N)+".csv", sample_rounded, delimiter=",")

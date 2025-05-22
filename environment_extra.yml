@@ -5,4 +5,4 @@ channels:
   - conda-forge
 dependencies:
   - scikit-learn
-
+  - seaborn
