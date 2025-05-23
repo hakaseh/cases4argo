@@ -65,10 +65,15 @@ cp $HOME/memg/example/fabm.yaml .
 `eat-gotm` will run the model. This will use the input files `gotm.yaml, fabm.yaml, t_prof_file.dat, s_prof_file.dat, meteo.dat` and produce the output files `result.nc, restart.nc`.
 `t_prof_file.dat` is the ocean temperature input data used for restroing/nudging. It must cover the entire simulation period, otherwise an error occurs. It is automatically interpolated to the model’s output vertical and temporal resolutions and included in `result.nc` as `temp_obs`. Same for salinity and BGC variables.
 
-### Ensemble
+### LHS ensemble of biogeochemical parameters
 For ensemble with identical physics but differing BGC parameters, we still need to create matching gotm_00##.yaml for each fabm_00##.yaml.
 Refer to “create_parameter_ensemble.py”
 
+1. Define the parameters, their ranges, and precision (define_parameter_range.py)
+   `python define_parameter_range.py`
+1. Generate the parameter ensemble
+   `python generate_ensemble_yaml.py`
+   
 For example, to submit 1000 ensembles using 8 cores (available on my Macbook Pro), do the following:
 ```
 seq -f "%04g" 1 1000 | parallel -j 8 'eat-gotm gotm_{}.yaml --output_id _{}'
