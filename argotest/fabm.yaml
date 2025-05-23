@@ -8,6 +8,7 @@ instances:
   1p1z:
     model: memg/bio_fennel/1p1z
     parameters:        
+      attCHL: 0.02486
       I_thNH4: 0.0095      
       D_p5NH4: 0.1          
       NitriR: 0.05          

@@ -8,6 +8,7 @@
 parameter_path = "instances/1p1z/parameters/"
 
 parameter_range = [             
+['attCHL',0.006,0.046,3],
 ['I_thNH4',0.008,0.015,3],
 ['D_p5NH4',0.05,0.15,2],
 ['NitriR',0.01,0.5,2],
