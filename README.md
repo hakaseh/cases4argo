@@ -1,4 +1,4 @@
-# GOTM-FABM-EAT-MEMG-ARGO
+# cases-argo: test cases for running and tuning GOTM-FABM-MEMG at locations where BGC-Argo floats are slowly drifting  
 This repository contains various configurations for a one-dimensional vertical ocean model featuring biogeochemistry and ensembles applied at selected locations in the global ocean where BGC-Argo float observations are available.
 
 ## Installation and compilation
