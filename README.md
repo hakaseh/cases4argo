@@ -1,4 +1,4 @@
-# cases-argo: test cases for running and tuning GOTM-FABM-MEMG at locations where BGC-Argo floats are slowly drifting  
+# argo1d: vertical one-dimensional ocean modelling at locations where BGC-Argo floats are slowly drifting  
 This repository contains various configurations for a one-dimensional vertical ocean model featuring biogeochemistry and ensembles applied at selected locations in the global ocean where BGC-Argo float observations are available.
 
 ## Installation and compilation
@@ -8,7 +8,7 @@ This repository contains various configurations for a one-dimensional vertical o
 cd
 ```
 
-1. Download GOTM, FABM, EAT, MEMG, and CASES
+1. Download GOTM, FABM, EAT, MEMG, CASES, and argo1d
 
 ```
 git clone --recurse-submodules -b v6.0 https://github.com/gotm-model/code.git gotm
@@ -16,6 +16,7 @@ git clone https://github.com/fabm-model/fabm.git
 git clone https://github.com/bwang63/gotm-fabm-memg-biogeochemical-model.git memg
 git clone https://github.com/gotm-model/cases.git
 git clone --recursive https://github.com/BoldingBruggeman/eat.git
+git clone https://github.com/hakaseh/argo1d.git
 ```
 
 1. Set up EAT with MEMG
@@ -34,13 +35,13 @@ conda install cmake=3.24
 source ./install -DFABM_INSTITUTES=memg -DFABM_MEMG_BASE=../memg
 ```
 
-The above line will create executables in `$HOME/.local/bin/` (not sure why inside a hidden directory). To use them, this directory needs to be exported.
+~~The above line will create executables in `$HOME/.local/bin/` (not sure why inside a hidden directory). To use them, this directory needs to be exported.~~
 
-vi ~/.zshrc
+~~vi $HOME/.zshrc~~
 
-Add `export PATH=$PATH:/$HOME/.local/bin`
+~~Add `export PATH=$PATH:/$HOME/.local/bin`~~
 
-Either open a new tab in Terminal or do `source $HOME/.zshrc` to reflect this change.
+~~Either open a new tab in Terminal or do `source $HOME/.zshrc` to reflect this change.~~
 
 ## Set up the environment
 Install additional libraries necessary for analyses.
