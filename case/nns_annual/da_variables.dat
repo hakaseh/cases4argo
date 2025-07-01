@@ -1,0 +1,27 @@
+temp	potential temperature	Celsius	/state	lon=1,lat=1,z=110,time=-1	1	110
+salt	salinity	g/kg	/state	lon=1,lat=1,z=110,time=-1	111	110
+u	x-velocity	m/s	/state	lon=1,lat=1,z=110,time=-1	221	110
+uo	x-velocity - old time step	m/s	/state	lon=1,lat=1,z=110,time=-1	331	110
+v	y-velocity	m/s	/state	lon=1,lat=1,z=110,time=-1	441	110
+vo	y-velocity - old time step	m/s	/state	lon=1,lat=1,z=110,time=-1	551	110
+u_taubo	bottom friction velocity - old time step	m/s	/state	lon=1,lat=1,time=-1	661	1
+xP	extra turbulence production	m2/s3	/state	lon=1,lat=1,z=110,time=-1	662	110
+h	layer thickness	m	/state	lon=1,lat=1,z=110,time=-1	772	110
+ho	layer thickness - old time step	m	/state	lon=1,lat=1,z=110,time=-1	882	110
+num	turbulent diffusivity of momentum	m2/s	/state	lon=1,lat=1,zi=111,time=-1	992	111
+nuh	turbulent diffusivity of heat	m2/s	/state	lon=1,lat=1,zi=111,time=-1	1103	111
+nus	turbulent diffusivity of salt	m2/s	/state	lon=1,lat=1,zi=111,time=-1	1214	111
+tke	turbulent kinetic energy	m2/s2	/state	lon=1,lat=1,zi=111,time=-1	1325	111
+tkeo	turbulent kinetic energy - old time step	m2/s2	/state	lon=1,lat=1,zi=111,time=-1	1436	111
+eps	energy dissipation rate	m2/s3	/state	lon=1,lat=1,zi=111,time=-1	1547	111
+1p1z_no3	1p1z nitrate	mmol N m-3	/state	lon=1,lat=1,z=110,time=-1	1658	110
+1p1z_nh4	1p1z ammonia	mmol N m-3	/state	lon=1,lat=1,z=110,time=-1	1768	110
+1p1z_phy	1p1z phytoplankton	mmol N m-3	/state	lon=1,lat=1,z=110,time=-1	1878	110
+1p1z_chl	1p1z chlorophyll	mg m-3	/state	lon=1,lat=1,z=110,time=-1	1988	110
+1p1z_zoo	1p1z zooplankton	mmol N m-3	/state	lon=1,lat=1,z=110,time=-1	2098	110
+1p1z_LDeN	1p1z LdetritusN	mmol N m-3	/state	lon=1,lat=1,z=110,time=-1	2208	110
+1p1z_SDeN	1p1z SdetritusN	mmol N m-3	/state	lon=1,lat=1,z=110,time=-1	2318	110
+lon	longitude	degrees_east		lon=1	2428	1
+lat	latitude	degrees_north		lat=1	2429	1
+z	depth	m		lon=1,lat=1,z=110,time=-1	2430	110
+zi	interface depth	m		lon=1,lat=1,zi=111,time=-1	2540	111
