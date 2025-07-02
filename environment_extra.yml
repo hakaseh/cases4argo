@@ -6,3 +6,6 @@ channels:
 dependencies:
   - scikit-learn
   - seaborn
+  - jupyterhub
+  - jupyterlab
+  - notebook
