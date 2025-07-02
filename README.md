@@ -1,5 +1,5 @@
-# argo1d: vertical one-dimensional ocean modelling at locations where BGC-Argo floats are slowly drifting  
-This repository contains various configurations for a one-dimensional vertical ocean model featuring biogeochemistry and ensembles applied at selected locations in the global ocean where BGC-Argo float observations are available.
+# cases4argo: configurations for a vertical one-dimensional ocean model at locations where Argo floats slowly drift
+This repository contains various configurations for running a one-dimensional vertical ocean model (GOTM) featuring biogeochemistry (FABM) and ensembles (EAT) applied at selected locations in the global ocean where Argo float observations are available. The repository was created primarily to develop and test optimization methods for biogeochemical parameters.
 
 ## Installation and compilation
 1. Change to your home directory
@@ -16,7 +16,7 @@ git clone https://github.com/fabm-model/fabm.git
 git clone https://github.com/bwang63/gotm-fabm-memg-biogeochemical-model.git memg
 git clone https://github.com/gotm-model/cases.git
 git clone --recursive https://github.com/BoldingBruggeman/eat.git
-git clone https://github.com/hakaseh/argo1d.git
+git clone https://github.com/hakaseh/cases4argo.git
 ```
 
 1. Set up EAT with MEMG
@@ -46,17 +46,17 @@ source ./install -DFABM_INSTITUTES=memg -DFABM_MEMG_BASE=../memg
 ## Set up the environment
 Install additional libraries necessary for analyses.
 ```
-cd $HOME/gotm-fabm-eat-memg-argo
+cd
+cd cases4argo
 conda env update --name eat --file environment_extra.yml
 ```
 
-## Test cases
+## Cases
 
-Test cases refer to configurations to run the model at specific locations. Here, each case represents a fixed point where a BGC-Argo float was drifting. We created test cases following an example from the official EAT repository (https://github.com/BoldingBruggeman/eat/tree/main/tests/nns_annual), by copying and pasting the directory and modifying the contents.
+Cases refer to configurations to run the model at specific locations. Here, each case represents a fixed point where a Argo float was drifting. We created a sample case for the North Sea by following an example from the official EAT repository (https://github.com/BoldingBruggeman/eat/tree/main/tests/nns_annual), by copying and pasting the directory and modifying the contents. **NOTE this is not a case for Argo location, which is still working in progress**
 
 ```
-mv $HOME/eat/tests/nns_annual
-cp $HOME/memg/example/fabm.yaml .
+mv case/nns_annual
 ```
 ## Activate FABM and the 1p1z model
 `vi gotm.yaml` and set `use: true` for `fabm`. Also set `repair_state: true` if the model has issues running at the start.
