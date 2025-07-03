@@ -1,5 +1,5 @@
 # Start of user input
-N = 300    # ensemble size
+N = 10    # population/ensemble size
 # End of user input
 
 if __name__ == "__main__":
