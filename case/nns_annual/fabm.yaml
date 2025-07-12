@@ -8,30 +8,30 @@ instances:
   1p1z:
     model: memg/bio_fennel/1p1z
     parameters:        
-      attCHL: 0.02486
-      I_thNH4: 0.0095      
+      attCHL: 0.025
+      I_thNH4: 0.01      
       D_p5NH4: 0.1          
       NitriR: 0.05          
       K_NO3: 2.0         
       K_NH4: 2.0           
-      Vp0: 0.69           
+      Vp0: 0.7           
       K_Phy: 0.5   
       PhyCN: 6.625         
       PhyIS: 0.025          
-      PhyMR: 0.072            
-      Chl2C_m: 0.0535        
+      PhyMR: 0.07            
+      Chl2C_m: 0.054        
       ZooAE_N: 0.75          
       ZooBM: 0.1            
       ZooER: 0.1           
-      ZooGR: 0.75         
-      ZooMR: 0.025
+      ZooGR: 0.8         
+      ZooMR: 0.03
       ZooCN: 6.625
       LDeRRN: 0.01        
       SDeRRN: 0.03         
       CoagR: 0.005           
-      wP: 0.0               
-      wL: 0.0              
-      wS: 0.0              
+      wP: 0.05               
+      wL: 0.5              
+      wS: 0.05              
       PhyMin: 0.000001           
       ChlMin: 0.000001            
       ZooMin: 0.000001
