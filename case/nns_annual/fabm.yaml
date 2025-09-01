@@ -39,12 +39,12 @@ instances:
 
     initialization:
       no3: 10.0      
-      nh4: 0.1    
-      phy: 0.1   
-      chl: 0.1  
-      zoo: 0.1  
-      SDeN: 0.1
-      LDeN: 0.1
+      nh4: 0.01    
+      phy: 0.01   
+      chl: 0.01  
+      zoo: 0.01  
+      SDeN: 0.01
+      LDeN: 0.01
     use: true
 
   2p2z:
