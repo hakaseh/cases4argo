@@ -542,7 +542,7 @@ output:
       k_start: 1                             # start index for k dimension [min=0; max=110; default=1]
       k_stop: 110                            # stop index for k dimension [min=1; max=110; default=110]
       k_stride: 1                            # stride for k dimension [min=1; default=1]
-      time_method: point                     # treatment of time dimension [point=instantaneous, mean, integrated; default=point]
+      time_method: mean                     # treatment of time dimension [point=instantaneous, mean, integrated; default=point]
       xtype: default                         # data type [default, single=32-bit float, double=64-bit double; default=default]
       time_reference:                        # reference date and time to use in time units [yyyy-mm-dd HH:MM:SS; default=]
       sync_interval: 1                       # number of output steps between sychronization to disk (<= 0: sync on close only) [default=1]
