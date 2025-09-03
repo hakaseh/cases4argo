@@ -17,7 +17,8 @@ if __name__ == "__main__":
 
     D = len(name_para)     # parameter size
     sampler = qmc.LatinHypercube(d=D)
-    sample = sampler.random(n=N)
+#    sample = sampler.random(n=N)
+    sample = np.random.rand(N, D)  # testing with random sampling
     sample_scaled = qmc.scale(sample, l_bounds, u_bounds)
     sample_rounded = np.zeros_like(sample_scaled)
     for i in range(np.shape(sample_scaled)[1]):
