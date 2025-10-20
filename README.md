@@ -80,6 +80,12 @@ For example, to submit 1000 ensembles using 8 cores (available on my Macbook Pro
 seq -f "%04g" 1 1000 | parallel -j 8 'eat-gotm gotm_{}.yaml --output_id _{}'
 ```
 
+Sometimes for large ensemble jobs, some runs become unstable producing errors. To re-run only a specific ensemble member, do:
+```
+eat-gotm gotm_0045.yaml --output_id _0045
+```
+for an ensemble member 0045 for example.
+
 
 
 # References

@@ -9,3 +9,7 @@ dependencies:
   - jupyterhub
   - jupyterlab
   - notebook
+  - parallel
+  - ncview
+  - xarray
+  - dask
